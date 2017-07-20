@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 930, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+    
+	<head> 
+	
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet"> 
+        
+	 <style>
+         
+         a {
+    color:#22A093;
+    text-decoration: none;
+}        
+         a:hover{
+             color:#b1dbd3;
+             
+         }
+         
+         a:active {
+             color:#387882;
+         }
+         
+body, html, .main {
+    height: 100%;
+    width: 100%;
+    margin-left:auto;
+    color: #3D5555;
+    text-align: left;
+    
+}
+
+section {
+    min-height: 100%;
+    
+    
+}
+         
+         body  {
+          font-family: 'Montserrat', sans-serif;
+          background-position: contain; 
+          background-repeat:no-repeat;
+          
+            
+}
+         
+        
+         
+       
+    .HeadingText {
+    
+    font-size:3.75vw;
+    font-weight:700;
+    position: absolute;
+    left: 100px;
+    top: 35px;
+    color: white;
+    display:inline-flex;
+         
+}
+         
+         .SubheadingText {
+           
+    font-size: 2.5vw;
+    position: absolute;
+    left: 100px;
+    top: 93px;
+    font-weight: 300;
+    color: #213C3D;
+    display:inline-flex; 
+    text-shadow: none;
+             
+         }
+         
+
+.ContactLink {
+  position:absolute;
+  top:35px;
+  left:800px;
+  font-family: 'Montserrat', sans-serif; font-weight:400;
+  padding: 12px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #8bd3d1;
+  border: 3px solid #fff;
+  border-radius:26px;
+}
+
+.ContactLink:hover {
+color: #549193;
+background-color: #F5FFFB;
+
+}
+
+.ContactLink:active {
+  background-color: #549193;
+  color: #F5FFFB;
+
+}      
+       
+         
+.ResumeLink {
+  position:absolute;
+  top:35px;
+  left:625px;
+  font-family: 'Montserrat', sans-serif; font-weight:400;
+  padding: 12px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #8bd3d1;
+  border: 3px solid #fff;
+  border-radius:26px;
+}
+
+.ResumeLink:hover {
+color: #549193;
+background-color: #F5FFFB;
+
+}
+
+.ResumeLink:active {
+  background-color: #549193;
+  color: #F5FFFB;
+
+}      
+             
+.list2 {
+
+    font-size: 2vw;
+    font-weight:700;
+    position: absolute;
+    left: 425px;
+    top: 375px;
+    color: #213C3D;
+    display:inline-flex;
+             
+}
+         
+.list3 {
+             
+    font-size: 2vw;
+    font-weight:700;
+    position: absolute;
+    left: 825px;
+    top: 375px;
+    color: #213C3D;
+    display:inline-flex;         
+}         
+         
+         
+         
+
+         .Image1{ 
+             position:absolute;
+             width: 15%;
+             top: 150px;
+             left: 88px;
+         }
+         
+         .Image2 {
+             position:absolute;
+             width: 8%;
+             top: 165px;
+             left: 475px;
+         }
+         
+           .Image3 {
+             position:absolute;
+             width: 15%;
+             top: 175px;
+             left: 815px;
+         }
+         
+.CodeText{
+             position:absolute;
+             font-size:3.125vh;
+             text-shadow:none;
+             color:#26726C;
+             top: 425px;
+             left: 135px;  
+             text-align: center;
+}
+    
+         .section1 h2 {
+             
+             text-align: left;
+         }
+         
+.section2 h1 {
+             font-weight:800;
+} 
+        
+     
+         .Home1 {
+             
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+background-color: white;
+color: #72d8ce;
+border: 3px solid #72d8ce;
+border-radius: 33px;
+padding: 9px 33px;
+
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 3.3vh;
+margin-left: 1px;
+
+}
+
+.Home1:hover {
+color: white;
+background-color: #72d8ce;
+}
+         
+.Home1:active {
+background-color: #a2d6d2;
+border: 3px solid #a2d6d2;
+}
+         
+         .Home2 {
+             
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+background-color: white;
+color: #72d8ce;
+border: 3px solid #72d8ce;
+border-radius: 33px;
+padding: 9px 33px;
+
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 3.3vh;
+margin-left: 1px;
+
+}
+
+.Home2:hover {
+    
+color: white;
+background-color: #72d8ce;
+    
+}
+         
+.Home2:active {
+background-color: #a2d6d2;
+border: 3px solid #a2d6d2;
+}
+         
+         
+</style>
+              
+		<div class="HeadingText">
+            TITLE
+            </div>
+        
+        <div class="SubheadingText">
+            Subheading
+            </div>
+       
+</head>
+
+<body>
+    
+    <a href="#section2"><button class="ContactLink">CONTACT</button></a>
+    <a href="#section1"><button class="ResumeLink">RESUME</button></a>
+    
+
+<div class='Image1'>
+  <img class='CodeImage' src='http://res.cloudinary.com/dh5alrnwr/image/upload/v1498878935/Code2_iakfzh.svg' />
+</div>
+        
+<div class='Image2'>
+  <img class='CodeImage' src='http://res.cloudinary.com/dh5alrnwr/image/upload/v1498878030/Inforfmation2_zq85tf.svg' />
+</div>
+
+<div class='Image3'>
+  <img class='CodeImage' src='http://res.cloudinary.com/dh5alrnwr/image/upload/v1498877509/Design_peakpz.svg' />
+</div>    
+    
+<li>       
+<div class="list1" style="font-size: 2.5vw;
+    font-weight:700;
+    position: absolute;
+    left: 125px;
+    top: 350px;
+    color: #213C3D;
+    display:inline;
+    text-align: center;">CODE
+    <br>
+        <p style="font-size: 2vw; font-weight:300; text-shadow:none; color:#26726C";>HTML5
+        <br>CSS3
+        <br>JavaScript</p>          
+    </div>
+<div class="list2" style="font-size: 2.5vw;
+    font-weight:700;
+    position: absolute;
+    top: 350px;
+    color: #213C3D;
+    display:inline;
+    text-align: center;">
+    INFORMATION
+    <p style="font-size: 2vw; font-weight:300; text-shadow:none; color:#26726C";>
+    Wordpress
+         <br>Version Control/Git</p>
+    </div>
+    
+<div class="list3" style="font-size: 2.5vw;
+    font-weight:700;
+    position: absolute;
+    left: 825px;
+    top: 350px;
+    color: #213C3D;
+    display:inline;
+    text-align: center;">DESIGN
+<p style="font-size: 2vw; font-weight:300; text-shadow:none; color:#26726C";>
+    Mobile
+<br>Responsive
+    <br>Graphics</p>
+    </div>
+</li> 
+
+<body style="background-color:#79CCCA;">
+
+		<title>Mark Lev</title>
+		
+		<meta name="author" content="Mark Lev">
+
+    <div class="main">
+  
+    </div>
+<div class="main" id="section1" align="left";>
+    <section style="background-color:#fff; font-size:2.5vh";>
+        <br>
+        <br>
+        <a href="My_Website.html"><button class="Home2">HOME</button></a>
+        <br>
+        <br>
+<h2 style="font-weight:700";>SKILLS</h2>
+<p style="font-size:3.3vh; font-weight:300";>
+HTML5
+<br>CSS3
+<br>Javascript/jQuery
+<br>Wordpress/PHP 5
+<br>Version Control/Git
+<br>Responsive Design
+<br>Command Line Programming
+<br>Typography
+<br>
+<br>
+<h2 style="font-weight:700";>
+    WORK EXPERIENCE </h2>
+<p style="font-size:3.3vh; font-weight:300";>
+Freelance Web Designer-Developer. 2013-Present. 
+After graduation, I began a continuous self-education process of learning the essential skills of code writing and graphic design for Web Development. With a working knowledge of HTML, I learned CSS, and discovered how to integrate code with graphics. I have basic level JavaScript skills. I have a working knowledge of Version Control (Git), and intermediate skill level with Command Line programming. I am primarily a Front End designer and developer. I am versatile, a creative thinker, with a working knowledge of web development languages, and I am continuously integrating new skills. 
+<br>
+<br>
+        <br>
+        <h2 style="font-weight:700";>EDUCATION</h2>
+<p style="font-size:3.3vh; font-weight:300 ;font color=#315151; line-height: 125%";>Bachelor's Degree. Parsons The New School for Design. New York, NY. Graduated in January, 2012.</p>
+        <br>
+        <br>
+        <br>
+    </section>
+        
+    <div class="main" id="section2" align="left";>
+    <section style="background-color:#fff; font-size:2.5vh";>
+
+        <br>
+        <a href="My_Website.html"><button class="Home1">HOME</button></a>
+        <br>
+        <br>
+        <br>
+        <h1 style="text-align:center; font-size: 8vh";>CONTACT</h1>
+        <h1 style="text-align:center; font-size: 5vh";>EMAIL&nbsp;</h1><a href="mailto:marklevwebdesigner@gmail.com";><p style="font-size:5vh; font-weight:400 ;font color=#26726C;; line-height: 125%; text-align: center";>marklevwebdesigner@gmail.com</p></a>
+        
+    </div>
+
+	</body>
+</html>
